@@ -1,0 +1,1 @@
+../build-Debug/FriendsOfClass/main.cpp.o ../build-Debug/FriendsOfClass/Other_class.cpp.o ../build-Debug/FriendsOfClass/Player.cpp.o ../build-Debug/FriendsOfClass/Friend_class.cpp.o   

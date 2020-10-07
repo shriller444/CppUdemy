@@ -1,0 +1,85 @@
+Generic programming with macros
+------------------------------------------------
+"Writing code to work with a variety of types as arguments,
+
+as long as those argument types meet specific syntactic and 
+
+semantic requirements" - Bjarne Stroustrup
+
+e.g. function to take a number as a parameter and returne the square --> any numeric type can work with generic programming 
+C++ staticly typed therefore must know which type is being passed into this function for type check 
+
+- Macros **BEWARE** 
+
+- Function templates
+
+- Class templates 
+
+Macros (#define)
+------------------------------------------------
+
+- C++ preprocessor directives #
+
+- no type information
+
+- simple substitution
+
+#define MAX_SIZE 100
+
+#define PI 3.1459
+
+- replaced name with what we defined as they aree
+
+if (num > MAX_SIZE)
+    std:: cout << "Too big";
+
+double area = PI * r * r;
+
+- works by removing the pound sign statement  as swap with what is was defined as 
+
+- better method is to use constants which are typed and are known to the compiler. 
+
+max function 
+------------------------------------------------
+
+- suppose we need a function to determine the max of 2 integers
+
+int max(int a, int b){
+    return (a > b) ? a : b; // conditional operators return a if true and b if false.
+}
+
+int x = 100;
+int y = 200;
+std::cout << max(x,y) //displays 200 
+
+- suppose we need to determine this value for doubles and chars 
+- many functions with same code, only thing that changes types.
+
+- we can write a genereic macro with arguments instead 
+
+#define MAX(a,b) ((a>b) ? a: b) // define the term MAX with a function which can be called with no regard to type.  
+
+std::cout << MAX(10,20) << std::endl; // 20
+std::cout << MAX(2.4, 3.5) << std::endl; // 3.5
+std::cout << MAX('A','C') << std::endl; // C
+
+Be careful with macros
+------------------------------------------------
+
+#define SQUARE(a) a*a
+
+result =SQUARE(5); // expect 25
+result = 5*5; // get 25
+
+result = 100/SQUARE(5); // expect 4
+result = 100/5*5 // get 100 by bidmas
+
+- prevet errors like this by wrapping in parentheses, caused by preprocessor with no regard of syntax and semantics of the language 
+
+#define SQUARE(a) ((a)*(a))
+
+result =SQUARE(5); 
+result = ((5)*(5)); 
+
+result = 100/SQUARE(5); 
+result = 100/((5)*(5)); // now gets 4 

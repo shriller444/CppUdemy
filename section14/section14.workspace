@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="section14" Database="" Version="10000">
+  <Project Name="MyString-start" Path="OverloadingOperators/OverloadingOperators.project" Active="No"/>
+  <Project Name="Mystring-Copy-Assignment" Path="Mystring-Copy-Assignment/Mystring-Copy-Assignment.project" Active="No"/>
+  <Project Name="Mystring-move-assignment" Path="Mystring-move-assignment/Mystring-move-assignment.project" Active="No"/>
+  <Project Name="Mystring-Operator-methods" Path="Mystring-Operator-methods/Mystring-Operator-methods.project" Active="No"/>
+  <Project Name="Mystring-operator-functions-global" Path="Mystring-operator-functions-global/Mystring-operator-functions-global.project" Active="No"/>
+  <Project Name="Mystring-insertion-attraction" Path="Mystring-insertion-attraction/Mystring-insertion-attraction.project" Active="No"/>
+  <Project Name="Challenge" Path="Challenge/Challenge.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="MyString-start" ConfigName="Debug"/>
+      <Project Name="Mystring-Copy-Assignment" ConfigName="Debug"/>
+      <Project Name="Mystring-move-assignment" ConfigName="Debug"/>
+      <Project Name="Mystring-Operator-methods" ConfigName="Debug"/>
+      <Project Name="Mystring-operator-functions-global" ConfigName="Debug"/>
+      <Project Name="Mystring-insertion-attraction" ConfigName="Debug"/>
+      <Project Name="Challenge" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="MyString-start" ConfigName="Release"/>
+      <Project Name="Mystring-Copy-Assignment" ConfigName="Release"/>
+      <Project Name="Mystring-move-assignment" ConfigName="Release"/>
+      <Project Name="Mystring-Operator-methods" ConfigName="Release"/>
+      <Project Name="Mystring-operator-functions-global" ConfigName="Release"/>
+      <Project Name="Mystring-insertion-attraction" ConfigName="Release"/>
+      <Project Name="Challenge" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

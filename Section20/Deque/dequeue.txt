@@ -1,0 +1,60 @@
+#include <deque>
+
+std::deque (double ended queue)
+
+- Dynamic size
+ - handled automatically
+ - can expand and contract as needed
+ - Elements are NOT stored in contiguous memory unlike vector
+ 
+- Direct element access (constant time)
+
+- Rapid insertion and deletion at the front and back (constant time)
+
+- insertion or removal of elements (linear time)
+
+- all iterators available and may invalidate
+
+std::dequeue - initisaliztion and assignment
+-----------------------------------------------
+
+std::deque<int> d {1,2,3,4,5};
+std::deque<int> d1 (10,100); // ten 100s, uses overloaded constructors.
+
+std::deque<std::string> stooges {
+    std::string{"Larry"}, "Moe", std::string{"Curly"}
+    
+};
+
+d = {2,4,6,8,10};
+
+
+std::deque - common methods
+-----------------------------------------------
+
+push_front / push_back add elements to back and front
+
+- deque is not store contiguously in memory, may be a collection of memory blocks --> linked together , thus a linked list of vectors.
+
+std::deque<int> d {1,2,3,4,5};
+
+std::cout << d.size(); // 5
+std::cout << d.max_size(); //largee
+
+std::cout << d.at(0); //1
+std::cout << d[1]; // 2
+.front() / .back() gets the first and last elements, //1 and 5. 
+
+Person p1 {"Larry", 18};
+std:deque<Person> d;
+
+d.push_back(p1); // add p1 to back
+d.pop_back(); // remove p1 from back
+
+d.push_front(Person {"Larry",18}); // add p1 to front
+d.pop_front(); // remove p1 from front
+
+d.emplace_back("Larry", 18); // add p1 to back using paramters to build object rather than copy or move
+d.emplace_front("Moe", 24); // add to front using parameters of the object to construct
+
+

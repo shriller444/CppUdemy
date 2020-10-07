@@ -1,0 +1,34 @@
+C++ Class template
+
+- similar to a function template, but at the class level. 
+
+- allows plug in of any data type
+
+- compiler generates the appropriate class from the blueprint
+- this is the idea template meta programming. 
+
+Generic programming with class templates
+
+- We would like our class to be able to hold any type of data in addition the string
+
+- you cannot overload class names 
+
+- we dont really want to use dynamic polymorphism
+
+return the value of an attribute to 'T'
+
+add template <typename T > above
+
+create instance = className<datatype> objectName {attributes};
+
+- can use multiple template parameters also. 
+
+std::pair
+---------------------------------------------
+#include <utility>
+
+// this is a simple assignment of 2 types to an object where the methods first and second call each attribute accordingly. 
+std::pair<std::string, int> p1 {"Frank", 100};
+
+std::cout << p1.first; Frank
+std::cout << p1.second; 100

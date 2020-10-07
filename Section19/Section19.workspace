@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Section19" Database="" Version="10000">
+  <Project Name="FilesStreamsIO" Path="FilesStreamsIO/FilesStreamsIO.project" Active="No"/>
+  <Project Name="StreamManipBOOLincludestxt" Path="StreamManipulators/StreamManipulators.project" Active="No"/>
+  <Project Name="StreamManipINT" Path="StreamManipINT/StreamManipINT.project" Active="No"/>
+  <Project Name="StreamManipFloat" Path="StreamManipFloat/StreamManipFloat.project" Active="No"/>
+  <Project Name="FieldWidthAlignFill" Path="FieldWidthAlignFill/FieldWidthAlignFill.project" Active="No"/>
+  <Project Name="Challenge1" Path="Challenge1/Challenge1.project" Active="No"/>
+  <Project Name="ReadingFromTextFile" Path="ReadingFromTextFile/ReadingFromTextFile.project" Active="No"/>
+  <Project Name="ReadFile1" Path="ReadFile1/ReadFile1.project" Active="No"/>
+  <Project Name="ReadFile2" Path="ReadFile2/ReadFile2.project" Active="No"/>
+  <Project Name="ReadFile3" Path="ReadFile3/ReadFile3.project" Active="No"/>
+  <Project Name="ReadFile4" Path="ReadFile4/ReadFile4.project" Active="No"/>
+  <Project Name="Challenge2" Path="Challenge2/Challenge2.project" Active="No"/>
+  <Project Name="Challenge3" Path="Challenge3/Challenge3.project" Active="No"/>
+  <Project Name="WritingToTextFiles" Path="WritingToTextFiles/WritingToTextFiles.project" Active="No"/>
+  <Project Name="WriteFile" Path="WriteFile/WriteFile.project" Active="No"/>
+  <Project Name="CopyFile1" Path="CopyFile1/CopyFile1.project" Active="No"/>
+  <Project Name="CopyFile2" Path="CopyFile2/CopyFile2.project" Active="No"/>
+  <Project Name="Challenge4" Path="Challenge4/Challenge4.project" Active="No"/>
+  <Project Name="StringStreams" Path="StringStreams/StringStreams.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="FilesStreamsIO" ConfigName="Debug"/>
+      <Project Name="StreamManipBOOLincludestxt" ConfigName="Debug"/>
+      <Project Name="StreamManipINT" ConfigName="Debug"/>
+      <Project Name="StreamManipFloat" ConfigName="Debug"/>
+      <Project Name="FieldWidthAlignFill" ConfigName="Debug"/>
+      <Project Name="Challenge1" ConfigName="Debug"/>
+      <Project Name="ReadingFromTextFile" ConfigName="Debug"/>
+      <Project Name="ReadFile1" ConfigName="Debug"/>
+      <Project Name="ReadFile2" ConfigName="Debug"/>
+      <Project Name="ReadFile3" ConfigName="Debug"/>
+      <Project Name="ReadFile4" ConfigName="Debug"/>
+      <Project Name="Challenge2" ConfigName="Debug"/>
+      <Project Name="Challenge3" ConfigName="Debug"/>
+      <Project Name="WritingToTextFiles" ConfigName="Debug"/>
+      <Project Name="WriteFile" ConfigName="Debug"/>
+      <Project Name="CopyFile1" ConfigName="Debug"/>
+      <Project Name="CopyFile2" ConfigName="Debug"/>
+      <Project Name="Challenge4" ConfigName="Debug"/>
+      <Project Name="StringStreams" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="FilesStreamsIO" ConfigName="Release"/>
+      <Project Name="StreamManipBOOLincludestxt" ConfigName="Release"/>
+      <Project Name="StreamManipINT" ConfigName="Release"/>
+      <Project Name="StreamManipFloat" ConfigName="Release"/>
+      <Project Name="FieldWidthAlignFill" ConfigName="Release"/>
+      <Project Name="Challenge1" ConfigName="Release"/>
+      <Project Name="ReadingFromTextFile" ConfigName="Release"/>
+      <Project Name="ReadFile1" ConfigName="Release"/>
+      <Project Name="ReadFile2" ConfigName="Release"/>
+      <Project Name="ReadFile3" ConfigName="Release"/>
+      <Project Name="ReadFile4" ConfigName="Release"/>
+      <Project Name="Challenge2" ConfigName="Release"/>
+      <Project Name="Challenge3" ConfigName="Release"/>
+      <Project Name="WritingToTextFiles" ConfigName="Release"/>
+      <Project Name="WriteFile" ConfigName="Release"/>
+      <Project Name="CopyFile1" ConfigName="Release"/>
+      <Project Name="CopyFile2" ConfigName="Release"/>
+      <Project Name="Challenge4" ConfigName="Release"/>
+      <Project Name="StringStreams" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

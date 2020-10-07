@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Section5" Database="" Version="10000">
+  <Project Name="BasicIO" Path="BasicIO/BasicIO.project" Active="Yes"/>
+  <VirtualDirectory Name="g">
+    <VirtualDirectory Name="balls">
+      <Project Name="rgryry" Path="rgryry/rgryry.project"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="BasicIO" ConfigName="Debug"/>
+      <Project Name="rgryry" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="BasicIO" ConfigName="Release"/>
+      <Project Name="rgryry" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

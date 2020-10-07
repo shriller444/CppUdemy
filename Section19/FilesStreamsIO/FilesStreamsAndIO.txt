@@ -1,0 +1,56 @@
+- c++ uses streams as an interface between the program and input / output devices 
+
+- independent of the actual device --> physical or virtual 
+
+- sequence of bytes = stream.
+
+- input stream provides data to to the program works io devices.
+
+- output stream receives data from the program.
+
+----------------------------------
+header files to import for streams
+----------------------------------
+
+iostream - provides definition for formatted input and output from/to streams
+
+fstream - provides defiintion for formatted input and output from/to file streams.
+
+iomanip - provides definitions for manipulators used to format stream I/O. 
+
+--------------------------
+commonly used stream classes
+--------------------------
+ios - provides basic support for formatted and unformatted I/O operations
+Base class most other clases. 
+
+ifstream - provided for high level input operations on file based streams
+
+oftstream - provided for high level output operations on file based streams
+
+fstream - provided for high level I/O operations on file based streams derived from ofstream/ifstream (multiple inheritance)
+
+stringstream - Provided for high level I/O operations on memory based strings derived from istringstream and osstringstream.
+
+----------------------------------
+Global stream objects
+----------------------------------
+
+cin - standard input stream , by default 'connected' to the standard input device (keyboard) 
+- an instance of istream (buffered - wont be automatic until users presses enter )
+
+cout - standard output stream, by default 'connected' to the standard output device (console)
+- an isntance of ostream (buffer ends when endl; flush stream or buffer fills)
+
+cerr - standard error stream, by default 'connected' to the standard error device (console)
+- an instance of ostream (unbuffered - input and output when needed)
+
+clog - Standard log stream - by default 'connected' to the standard log device (console)
+- instance of ostream (unbuffered)
+
+- Global objects --> init before main execution 
+- Best practice --> use cerr for error messages and clog for log messages. 
+
+
+
+

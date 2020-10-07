@@ -1,0 +1,48 @@
+std::stack
+
+- LIFO data structure
+
+- implemented as an adapter over the STL container, can be implemented as a vector, list, or deque(they have back)
+- uses delegation and calls these containers back function 
+
+- All operations occur on one end of the stack (top)
+
+- No iterators are supported -> makes no sense as add and remove from top
+
+
+std::stack
+-----------------------------
+#include <stack>
+
+- push , insert element at the top of the stack
+- pop , remove an element from the top of the stack
+- top, access the top element of the stack -> doesnt remove. 
+- empty, is the stack empty?
+- size, the number of elements in the stack.
+
+std::stack - initalisation
+------------------------------
+std::stack<int> s; // deque as default. 
+
+std::stack<int, std::vector<int>> s1; // vector stack
+std::stack<int, std::list<int>> s1; // list
+std::stack<int, std::deque<int>> s1;  // deque
+
+common methods of std::stack
+----------------------------------
+s.push(10) -> places 10 at the top of the stack
+
+s.top() -> return value at top of stack
+
+s.pop() -> return value at the top and remove it
+
+s.size() -> return how many elements are in the stack 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+[{
+  "file": "C:\\Udemy Main\\c++\\CppWorkSpaceMain\\NumberTest\\main.cpp",
+  "directory": "C:\\Udemy Main\\c++\\CppWorkSpaceMain\\NumberTest",
+  "command": "clang  -c \"C:\\Udemy Main\\c++\\CppWorkSpaceMain\\NumberTest\\main.cpp\" -o \"C:\\Udemy Main\\c++\\CppWorkSpaceMain\\NumberTest\\main.cpp\".o -target x86_64-pc-windows-gnu -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++ -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\\mingw32 -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\\backward -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include -Ic:\\MinGW\\include -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include-fixed -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "C:\\Udemy Main\\c++\\CppWorkSpaceMain\\FirstProgram\\main.cpp",
+  "directory": "C:\\Udemy Main\\c++\\CppWorkSpaceMain\\FirstProgram",
+  "command": "clang  -c \"C:\\Udemy Main\\c++\\CppWorkSpaceMain\\FirstProgram\\main.cpp\" -o \"C:\\Udemy Main\\c++\\CppWorkSpaceMain\\FirstProgram\\main.cpp\".o -target x86_64-pc-windows-gnu -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++ -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\\mingw32 -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\\backward -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include -Ic:\\MinGW\\include -Ic:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include-fixed -I. -I.  -g  -O0  -Wall"
+ }]

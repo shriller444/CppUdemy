@@ -1,0 +1,89 @@
+Output files ,  fstream and ofstream
+
+fstream and ofstream are used for output files
+
+1) #include <fstream>
+2) Declare fstream of ofstream object
+3) connect it to a file on system to be opened for writing 
+4) write data to the file via a stream
+5) close the stream
+
+if file doesnt exist it creates a new one
+
+
+- output files will be created if they dont exist
+- output files will be overwritten (truncated) by default
+- can be opened so that new writes append
+- can be open in text or binary modes  
+
+------------------
+opening file for writing with fstream
+------------------
+
+std::fstream outFile {"directory", std::ios::out};
+open file in output mode. 
+
+open in binary mode by adding std::ios::out | std::ios::binary
+
+------------------
+opening file for writing ofstream
+------------------
+
+std::ofstream outFile {"directory", std::ios::out};
+dont need std::ios::out
+
+------------------
+opening a file for writing with ofstream
+------------------
+
+//truncate (discard contents) when opening
+
+std::ofstream outFile {"directory", std::ios::trunc};
+
+//append on each write
+
+std::ofstream outFile {"directory", std::ios::app};
+
+//seek to end of stream when opening
+
+std::ofstream outFile {"directory", std::ios::ate};
+
+------------------
+opening a file for writing with open
+------------------
+
+std::ofstream outFile;
+std::string filename;
+std::cin >> filename; // get the file name
+
+outFile.open(filename); // or outFile.open(filename, std::ios::binary);
+
+------------------
+writing using << 
+------------------
+
+- use same way as we have done for insetion operator
+- same way used it with cout 
+
+outFile << data << std::endl;
+
+------------------
+copying text file to other
+--------------------
+
+std::ifstream inFile{"directory"}
+std::ifstream outFile{"directory"}
+
+std::string line {};
+
+while (std::getline(inFile, line)){ // read a line, true if succesfull read 
+    outFile << line << std::endl; // write a line 
+}
+
+inFile.close()
+outFile.close()
+
+
+use .get(character) to fetch character and .put(character) to write a character to a file
+
+

@@ -1,0 +1,118 @@
+
+What is the stl?
+------------------------------------------------
+- a library of powerful , reusable, adaptable, generic classes and functions
+
+- implemneted using c++ templates
+
+- implements common data structures and algorithms
+
+- huge class libary. 
+
+Why use the stl?
+------------------------------------------------
+
+- assortment of commonly used containers
+
+- known time and size complexity 
+
+- tried and tested --> reusablity 
+
+- consistent , fast, and type-safe
+
+- Extensible 
+
+
+Elements of the STL
+------------------------------------------------
+1) Containers
+ - collections of objects or primitive types
+  (array, vector, deque, stack, set, map, etc.)
+
+2) Algorithms
+ - functions for processing sequences of elements from containers
+  (find, max , count , accumulate, sort, etc.)
+
+3) Iterators
+ - Generate sequences of element from containers
+  (forward, reverse by value, by reference , constant, etc.)
+
+
+simple example
+------------------------------------------------
+
+#include <vector>
+#include <algorithm> - use stl algs. 
+
+std::vector<int> v {1,5,3};
+
+// all containers can be sorted this way, can change the method of sorting
+std::sort(v.begin(), v.end()); use an iterator from the sort algorithm, could have been modified to only sort first half etc. 
+
+for (auto elem: v)
+    std::cout << elem << std::endl;
+1
+3
+5
+
+reverse a vector
+------------------------------------------------
+
+std::reverse(v.begin(), v.end());
+
+// this ranged based for loop BTS is actually an iterator. 
+for (auto elem:v)
+    std::cout << elem << std::endl;
+5
+3
+1
+
+accumulate
+------------------------------------------------
+
+int sum {};
+
+// 0 shows the value to start from in this summation
+// 0.0 for summing doubles as this could mess it up  
+
+sum = std::accumulate(v.begin(), v.end(), 0);
+
+std::cout << sum << std::endl;
+
+9 // 1+3+5
+
+Types of containers
+------------------------------------------------
+1) Sequence containers - maintain order of insertion 
+ - array, vector, list, forward_list, deque 
+
+2) Associateve containers - insert elements in predefined order or no order at all. 
+ - set, multi set, map , multi map 
+
+3) Container adapters - no iterators included 
+ - stack, queue, priority queue
+
+Types of iterators
+------------------------------------------------
+1) input 
+ - from the container to the program
+ 
+2) Output
+ - from the program to the container
+
+3) Forward
+ - navigate one item at a time in one direction 
+
+4) Bi directional 
+ - navigate one time at a time both directions 
+
+5) Random access -> use subscript [i] .at(i)
+ - directly access a container item. 
+
+Types of Algorithms
+------------------------------------------------
+around 60 algorithms in STL
+
+1) NON MODIFYING
+
+2) MODIFYING

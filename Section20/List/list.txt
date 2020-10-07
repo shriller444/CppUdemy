@@ -1,0 +1,92 @@
+std::list and std::forward_list
+
+- Sequence containers
+
+- Non-Contiguous in memory
+
+- No direct access to elements
+
+- Very efficient for inserting and deleting elements once an element is found
+
+std::list
+#include <list>
+
+- Dynamic Size
+ - Lists of elements
+ - list is bidirectional (doubly linked)
+ 
+- Direct element access is NOT provided
+
+- rapid insertion and deletion elements anywhere in the container with constant time
+
+- all iterators available and invalidate when corresponding element is deleted. 
+
+- elements store info about adjacent values. 
+
+- useful when direct access is not neccesaraily required. 
+
+list is initlaised the same way as vectors queues etc. 
+
+methods
+-------------------------
+l.size() - returns the number of elements in the list
+l.max_size() - returns the maximum number of elements in the list
+
+l.front/back() - returns front and back values of the list. 
+
+push back / pop back / front - same as deque
+
+emplace front and back same as vector and deque.
+
+std::list<int> 1 {1,2,3,4,5};
+auto it = std::find(l.begin(), l.end(), 3);
+
+l.insert(it, 10);  //1,2,10,3,4,5
+
+l.erase(it); //1,2,10,4,5 - erases the 3 as it is not invalidated , invalidated after this erasal. 
+
+l.resize(2) // 1,2 - removes other elements.
+
+l.resize(5) // 1,2,0,0,0
+
+traversing
+-----------------------------
+
+set iterator to l.begin()
+
+use it++ and it-- to move the iterator back and forth , dereference *it to get data item. 
+
+std::forward_list
+-----------------------------
+
+#include <forward_list>
+
+- Dynamic size
+ - lists of elements
+ - list uni-directional (singly linked)
+ - less overhead than a std::list
+ 
+- Direct element access not provided
+
+- rapid insertion and deletion of elements in all container within a constant time
+
+- reverse iterators not available. iterators invalidate when corresponding element is deleted
+
+common forward list methods
+-----------------------------
+
+----l.size() - not available---------
+l.max_size() - larger number of max items to store
+l.front() - return first element at start of list
+------l.back() - not available---------
+
+only have and pop front and emplace front
+
+std::forward_list<int> 1 {1,2,3,4,5};
+auto it = std::find(l.begin(), l.end(), 3);
+
+l.insert_after(it, 10); // 1 2 3 10 4 5 - places 10 after where it found the 3 value
+l.emplace_after(100); // 1 2 3 100 10 4 5
+l.erase_after(it); // 1 2 3 10 4 5 - erases 100 as its after 3
+
+l.resize works same way as normal list

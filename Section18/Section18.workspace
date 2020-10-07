@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Section18" Database="" Version="10000">
+  <Project Name="mpgfunctionthrowexception" Path="MPG/MPG.project" Active="No"/>
+  <Project Name="MPGtrycatch" Path="MPGtryExcept/MPGtryExcept.project" Active="No"/>
+  <Project Name="MPGMultipleThrownExceptions" Path="MPGMultipleThrownExceptions/MPGMultipleThrownExceptions.project" Active="No"/>
+  <Project Name="StackUnwinding" Path="StackUnwinding/StackUnwinding.project" Active="No"/>
+  <Project Name="MPGfunctionExceptionClasses" Path="MPGfunctionExceptionClasses/MPGfunctionExceptionClasses.project" Active="No"/>
+  <Project Name="ConstructorException" Path="ConstructorException/ConstructorException.project" Active="No"/>
+  <Project Name="CPPstandardExceptionClassHierarchy" Path="CPPstandardExceptionClassHierarchy/CPPstandardExceptionClassHierarchy.project" Active="No"/>
+  <Project Name="Challenge" Path="Challenge/Challenge.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="mpgfunctionthrowexception" ConfigName="Debug"/>
+      <Project Name="MPGtrycatch" ConfigName="Debug"/>
+      <Project Name="MPGMultipleThrownExceptions" ConfigName="Debug"/>
+      <Project Name="StackUnwinding" ConfigName="Debug"/>
+      <Project Name="MPGfunctionExceptionClasses" ConfigName="Debug"/>
+      <Project Name="ConstructorException" ConfigName="Debug"/>
+      <Project Name="CPPstandardExceptionClassHierarchy" ConfigName="Debug"/>
+      <Project Name="Challenge" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="mpgfunctionthrowexception" ConfigName="Release"/>
+      <Project Name="MPGtrycatch" ConfigName="Release"/>
+      <Project Name="MPGMultipleThrownExceptions" ConfigName="Release"/>
+      <Project Name="StackUnwinding" ConfigName="Release"/>
+      <Project Name="MPGfunctionExceptionClasses" ConfigName="Release"/>
+      <Project Name="ConstructorException" ConfigName="Release"/>
+      <Project Name="CPPstandardExceptionClassHierarchy" ConfigName="Release"/>
+      <Project Name="Challenge" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

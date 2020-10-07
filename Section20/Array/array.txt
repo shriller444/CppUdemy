@@ -1,0 +1,47 @@
+#include <array>
+
+- fixed size 
+ - must be known at compile time
+ 
+- direct element access -> constant time complexity 
+
+- provides access to the underlying raw array -> use with raw pointer library
+
+- use instead of raw arrays when possible
+
+- all iterators available and do not invalidate
+
+Object type unlike raw array. 
+std::array init and assignment
+----------------------------------------
+
+std::array<int , 5> arr {1,2,3,4,5};
+
+std::array<std::string, 3> stooges { std::string{"larry"}, "c-style-string (converted to c++)", std::string{"Curly"}};
+
+arr1 = {2,4,6,8,10} --> sets the array to hold all these values from an initialiser list.
+
+std::array - common commands
+----------------------------------------
+
+std::array<int , 5> arr {1,2,3,4,5};
+
+std::cout << arr.size(); // 5 
+
+std::cout << arr.at(0);   // 1
+std::cout << arr[1];      // 2
+
+std::cout << arr.front(); // 1
+std::cout << arr.back(); // 5
+
+std::array - common methods
+----------------------------------------
+std::array<int , 5> arr {1,2,3,4,5};
+std::array<int , 5> arr1 {10 , 20 ,30 , 40, 50};
+
+std::cout << arr.empty(); // 0 false 
+std::cout << arr.max_size(); // 5
+
+std::cout << arr.fill(10); // fills all to 10
+arr.swap(arr1); // swaps the 2 arrays 
+int *data = arr.data() // get raw array addresses. 

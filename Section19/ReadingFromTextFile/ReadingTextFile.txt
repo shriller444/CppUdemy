@@ -1,0 +1,156 @@
+input files (fstream and ifstream)
+
+fstream and ifstream are commonly used for input files
+
+1) #include <fstream>
+2) declare an fstream or ifstream object
+3) Connect it to a file on your file system (open for reading)
+4) Read data from the fila via a stream 
+5) close the stream 
+
+------------------------------------
+Opening a file for reading with fstream
+------------------------------------
+std::fstream in_file {"../file.txt"}, std::ios::in}; // open file one directory up from where the exe = ../
+std::ios::in = mode of file is input mode to read
+
+------------------------------------
+Open for reading in binary mode
+------------------------------------
+std::fstream in_file {"../file.txt", std::ios::in | std::ios::binary}; // read non text files that have binary data 
+ - pipe operator is the OR operator, with bitfield like these its set both their states to true. 
+
+
+- fstream for both reading and writing
+
+------------------------------------
+Opening a file for reading with ifstream
+------------------------------------
+
+std::ifstream in_file {"../myfile.txt", std::ios::in};
+
+std::ifstream in_file {"../myfile.txt"};
+
+------------------------------------
+Open for reading in binary mode
+------------------------------------
+
+std::ifstream in_file {"../myfile.txt", std::ios::binary};
+
+------------------------------------
+Opening a file for reading with open
+------------------------------------
+
+std::ifstream in_file; // create in file as an ifstream, no filename for association 
+std::string filename;
+std::cin >> filename; // get the file name from user. 
+
+// operate on the file
+in_file.open(filename);
+//or
+in_file.open(filename, std::ios::binary);
+
+------------------------------------
+Check if file opened succesfully
+------------------------------------
+
+if (in_file.is_open()){
+        //read
+}
+else{
+    //file could not opened, doesnt exist , should program terminate?
+}
+
+------------------------------------
+or test stream object
+------------------------------------
+
+if (in_file){ // just check the object itself as it returns false when cannot open file
+    // read
+}
+else{
+    //file error
+}
+------------------------------------
+close file
+------------------------------------
+- always close any open files to flush any unwritten data
+
+in_file.close()
+
+------------------------------------
+reading from files using >>
+------------------------------------
+
+- we can use extraction operator for formatted read
+- same way we used with cin
+
+int num{};
+doubleTotal {};
+std::string name {};
+
+in_file >> num; // reads the number from a text file
+in_file >> total >> name; // read double and string from a text file. 
+
+------------------------------------
+Reading files using getline
+------------------------------------
+
+- we can use getline to read the file one line at at time
+
+std::string line{};
+
+std::getline(in_file, line); // read the line from the file and stores in the string line variable. 
+
+------------------------------------
+reading text file one line at a time
+------------------------------------
+
+std::ifstream in_file {"../myfile.txt"}; //open file
+std::string line {};
+
+if (!in_file){ // check if file is open
+    std::cerr << "File opening error" << std::endl; 
+    return 1; //exit program (main)
+}
+
+while (!in_file.eof()){ // while not at the end of a file, eof returns bool if not at end of file
+    std::getline(in_file, line); // read a line
+    std::cout << line << std::endl; // display the line
+}
+
+in_file.close(); // close the file 
+
+------------------------------------
+reading text file one line at time 2
+------------------------------------
+std::ifstream in_file {"../myfile.txt"}; //open file
+std::string line {};
+
+if (!in_file){ // check if file is open
+    std::cerr << "File opening error" << std::endl; 
+    return 1; //exit program (main)
+}
+
+while (std::getline(in_file,line)) // read a line only returns true when a read was succesful
+    std::cout << line << std::endl; // dispaly line
+
+in_file.close(); // close the file
+
+------------------------------------
+Reading text file one character at a time (get)
+------------------------------------
+
+std::ifstream in_file{"../myfile.txt"}; // open file
+char c;
+
+if (!in_file){
+    std::cerr << "File open error" << std::endl;
+    return 1; //exit the program (main)
+
+}
+
+while (in_file.get(c)) //read a character , returns bool whether worked
+    std::cout << c; // display character
+
+in_file.close(); // close the file

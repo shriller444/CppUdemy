@@ -1,0 +1,3 @@
+-ID:\UdemyMain\c++\Section20\Iterators
+-target
+i686-pc-windows-gnu

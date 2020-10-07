@@ -1,0 +1,1 @@
+../build-Debug/Mystring-Operator-methods/Mystring.cpp.o ../build-Debug/Mystring-Operator-methods/main.cpp.o   

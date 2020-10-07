@@ -1,0 +1,105 @@
+STL Map containers
+
+- Associative containers
+ - collection of stored objects that allow fast retrieval using a key
+ - STL provides Sets and Maps
+ - Usually implemented as a balanced binary tree or hashsets
+ - Most operations are very efficient
+ 
+- Maps
+ - std::map
+ - std::unordered_map
+ - std::multimap
+ - std::unordered_multimap
+ 
+std::map
+---------------------------
+
+#include <map>
+
+- Similar to a dictionary
+
+- Elements are stored as Key, Value pairs (std::pair)
+
+- Ordered by key
+
+- No duplicate elements (keys are unique)
+
+- Direct element access using the key
+
+- All iterators available and invalidate when corresponding element is deleted. 
+
+std::map - init and assign
+---------------------------
+
+std::map<std::string, int> m1 {{"Larry", 18}, {"Moe", 25}};
+- key value pair with each one assigned a data type
+
+std::map - common methods
+---------------------------
+
+m.size() // display number of key pairs 
+m.maz_size() // larger number for total number of keys can be stored
+
+NO CONCEPT OF A FRONT OR BACK 
+
+std::pair<std::string, std::string> p1 {"James", "Mechanic"};
+
+m.insert(p1);
+
+m.insert(std::make_pair("Roger", "Ranger")); // add this key pair value
+
+more ways to add
+---------------------------
+m["Frank"] = "Teacher"; // insert frank as a teacher
+m["Frank"] = "Instructor"; // update value
+m.at("Frank") = "Professor"; //update value  , throws exception if key not in map
+
+more methods
+---------------------------
+m.erase("Moe");#
+
+m.find("Bob") // find bob 
+
+if (m.find("Bob") != m.end())
+    std::cout << "Bob has been located!";
+
+auto it = m.find("George");
+
+if(it != m.end()){
+    m.erase(it); // erase george
+}
+
+int num = m.count("Bob"); // 0 or 1 to show whether it exists
+
+m.clear() // remove all elements
+m.empty() // bool if there are values present. 
+
+
+std::multi_map
+-------------------------
+#include <map>
+
+- same as map but allows duplicates
+
+std::unordered_map
+-------------------------
+
+#include <unordered_map>
+
+- elements are not ordered
+
+- no duplicates
+
+- no reverse iterators. 
+
+std::unordered_multimap
+-------------------------
+
+#include <unordered_map>
+
+- no order, allows duplicates and no reverse iterators.
+
+
+
+

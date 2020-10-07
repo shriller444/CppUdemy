@@ -1,0 +1,35 @@
+stream manipulators
+
+- streams have useful member functions to control formatting
+
+- can be used on input/output streams
+
+- time of the effect on the stream varies
+
+- can be used as member functions or as manipulators. 
+
+std::cout.width(10); //member function
+std::cout << std::setw(10); // manipulator
+
+--------------------
+Common stream manipulators
+--------------------
+
+BOOLEAN
+- boolalpha, noboolapha (1/0 -> true/false)
+
+INTEGER
+- dec, hex, oct, showbase, noshowbase, showpos, noshowpos, uppercase, nouppercase
+(base prefix, whether to show prefix, show positive + or change case.)
+
+FLOATING POINT
+- fixed, scientific, setprecision, showpoint, noshowpoint, showpos, noshowpos
+(decimal places, trailing zero, standard form, show point or no.)
+
+FIELD WIDTH, JUSTIFICATION AND FILL
+- setw, left , right, internal , setfill
+(justify numbers to space, fill empty space. )
+
+OTHERS
+- endl, flush, skipws, noskipws, ws 
+(flush stream buffer, whitespace skipping or not)

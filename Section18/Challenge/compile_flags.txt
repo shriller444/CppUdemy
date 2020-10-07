@@ -1,0 +1,9 @@
+-ID:\mingw\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include\c++
+-ID:\mingw\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include\c++\x86_64-w64-mingw32
+-ID:\mingw\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include\c++\backward
+-ID:\mingw\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include
+-ID:\mingw\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include-fixed
+-ID:\mingw\mingw64\x86_64-w64-mingw32\include
+-ID:\UdemyMain\c++\Section18\Challenge
+-target
+x86_64-pc-windows-gnu

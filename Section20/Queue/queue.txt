@@ -1,0 +1,43 @@
+std::queue
+
+- First in First out (FIFO) data structure
+
+- Implemented as an adapter over other STL container. can be implemented as a list or a deque -> call methods of underlying container through delegation.
+
+- elements are pushed at the back and popped from the front 
+
+- no iterators are supported. 
+
+std::queue
+--------------------------
+
+#include <queue>
+
+- push , insert an element at the back of the queue
+- pop, remove an element from the front of the queue
+
+- front ,access the element at the front, no removal
+- back, access the element at the back , no removal 
+
+- empty, is the queue empty?
+- size, number of elements in the queue. 
+
+std::queue - initialization
+------------------------------------
+
+std::queue<int> q; // deque as default
+
+std::queue<int, std::list<int>> q2; // list
+
+std::queue<int, std::deque<int>> q3; // deque
+
+std::queue common methods
+--------------------------
+.push(10) adds 10 to the back of the queue
+.push(20) -> 20, 10 - 10 at the front. 
+
+.front()/.back() for accessing elements at front and back of the queue
+
+q.pop() - remove and access element at front of queue
+
+q.size() - returns number of elements from the queue. 

@@ -1,0 +1,3 @@
+-ID:\UdemyMain\c++\Section6\PrimitiveTypes
+-target
+i686-pc-windows-gnu

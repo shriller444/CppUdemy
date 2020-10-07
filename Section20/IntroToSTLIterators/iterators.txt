@@ -1,0 +1,132 @@
+Iterators
+
+- Allows abstracting an arbitary container as a sequence of elements
+
+- They are objects that work like pointers by their design
+
+- most container classes can be travered with iterators. 
+
+Declaring iterators
+--------------------------------------------
+
+- iterators must be declared based on the container type they are iterating over
+
+container_type::iterator_type iterator_name;
+
+e.g.
+
+std::vector<int>::iterator it2; // it2 is exclusive to std::vector<int>
+std::map<std::string, std::string>::iterator it3;
+
+
+iterator begind and end methods
+--------------------------------------------
+
+std::vector<int> vec {1,2,3};  
+
+vec.begin() = 1 
+first element
+
+vec.end() = ""
+location after the last element
+
+Declaring iterators
+--------------------------------------------
+
+std::set<char> suits {'C', 'H', 'S', 'D'};
+
+suits.begin() --> C
+suits.end() --> end
+
+initializing iterators
+--------------------------------------------
+
+std::vector<int> vec {1,2,3};
+
+std::vector<int>::iterator it = vec.begin(); // sets the iterator to start pointing to first element.
+// or //
+auto it = vec.begin()
+if empty --> vec.end() = it.
+
+//////////
+OPERATION WITH ITERATORS (it)
+////////////
+
+operation - description - type of iterator
+--------------------------------------------
+++it - pre increment - all iterators
+--------------------------------------------
+it++ - post increment - all iterators
+--------------------------------------------
+it = it1 - assignment - all iterators
+--------------------------------------------
+*it - dereference - input/output
+--------------------------------------------
+it-> - arrow operator - input/output
+--------------------------------------------
+it == it1 - comparison for equality - input
+--------------------------------------------
+it != it1 - comparison for inequality - input
+--------------------------------------------
+--it - Pre-decrement - Bidirectional
+--------------------------------------------
+it-- - Post-decrement - Bidirectional
+--------------------------------------------
+it + i / it += i / it -1 / it -= i - increment and decrement - random access
+--------------------------------------------
+it </>/<=/>= it1 - comparison - Random access
+--------------------------------------------
+
+using iterator - std::vector while loop
+--------------------------------------------
+std::vector<int> vec {1,2,3};
+
+std::vector<int>::iterator it = vec.begin();
+
+while (it != vec.end()){
+    std::cout << *it << " ";
+    ++it;
+}
+// 1 2 3.
+
+using iterator - std::vector for loop
+-----------------------------------------
+// use auto to determine the correct type of iterator. 
+for (auto it = vec.begin(); it != vec.end(); i++){
+    std::cout << *it << " ";
+}
+// 1 2 3
+
+
+Reverse iterator
+--------------------------------------------
+
+- works in reverse
+- last element is the first and the first is the last
+- ++move backward, --moves forward
+
+std::vector<int> vec {1,2,3};
+std::vector<int>::reverse_iterator it = vec.begin();
+
+while (it != vec.end()){
+    std::cout << *it << " ";
+    ++it;
+}
+// 3 2 1
+
+Other iterators
+--------------------------------------------
+
+- begin() and end()
+ - iterator
+ 
+- cbegin() and cend()
+ - const_iterator
+
+- rbegin() and rend()
+ - reverse_iterator
+
+- crbegin() and crend()
+ - const_reverse_iterator
+ 
+ 
