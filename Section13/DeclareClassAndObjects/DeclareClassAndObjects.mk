@@ -14,14 +14,14 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Simon
-Date                   :=18/07/2020
-CodeLitePath           :=D:/CodeLite
-LinkerName             :=D:/mingw/mingw64/bin/g++.exe
-SharedObjectLinkerName :=D:/mingw/mingw64/bin/g++.exe -shared -fPIC
+Date                   :=08/10/2020
+CodeLitePath           :="C:/Program Files/CodeLite"
+LinkerName             :=g++
+SharedObjectLinkerName :=g++ -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.i
-DebugSwitch            :=-g 
+PreprocessSuffix       :=.o.i
+DebugSwitch            :=-gstab
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -32,11 +32,11 @@ OutputFile             :=..\build-$(ConfigurationName)\bin\$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E
+PreprocessOnlySwitch   :=-E 
 ObjectsFileList        :=$(IntermediateDirectory)/ObjectsList.txt
 PCHCompileFlags        :=
 RcCmpOptions           := 
-RcCompilerName         :=D:/mingw/mingw64/bin/windres.exe
+RcCompilerName         :=windres
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,19 +49,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:/mingw/mingw64/bin/ar.exe rcu
-CXX      := D:/mingw/mingw64/bin/g++.exe
-CC       := D:/mingw/mingw64/bin/gcc.exe
+AR       := ar rcus
+CXX      := g++
+CC       := gcc
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := D:/mingw/mingw64/bin/as.exe
+AS       := as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\CodeLite
+CodeLiteDir:=C:\Program Files\CodeLite
 Objects0=../build-$(ConfigurationName)/DeclareClassAndObjects/main.cpp$(ObjectSuffix) 
 
 

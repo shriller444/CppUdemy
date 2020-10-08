@@ -1,3 +1,1 @@
 -ID:\UdemyMain\c++\Section13\FriendsOfClass
--target
-i686-pc-windows-gnu

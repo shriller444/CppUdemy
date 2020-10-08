@@ -1,3 +1,1 @@
 -ID:\UdemyMain\c++\Section13\StructVsClass
--target
-i686-pc-windows-gnu

@@ -1,3 +1,1 @@
 -ID:\UdemyMain\c++\Section13\DeclareClassAndObjects
--target
-i686-pc-windows-gnu

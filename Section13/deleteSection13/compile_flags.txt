@@ -1,3 +1,1 @@
 -ID:\UdemyMain\c++\Section13\deleteSection13
--target
-i686-pc-windows-gnu

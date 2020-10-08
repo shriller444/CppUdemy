@@ -5,7 +5,7 @@
   <Project Name="AccessModifiers" Path="AccessModifiers/AccessModifiers.project" Active="No"/>
   <Project Name="ImplementingMethods1" Path="ImplementingMethods1/ImplementingMethods1.project" Active="No"/>
   <Project Name="ImplementingMethods2" Path="ImplementingMethods2/ImplementingMethods2.project" Active="No"/>
-  <Project Name="ConstructorsAndDestructors" Path="ConstructorsAndDestructors/ConstructorsAndDestructors.project" Active="Yes"/>
+  <Project Name="ConstructorsAndDestructors" Path="ConstructorsAndDestructors/ConstructorsAndDestructors.project" Active="No"/>
   <Project Name="DefaultConstructor" Path="DefaultConstructor/DefaultConstructor.project" Active="No"/>
   <Project Name="ConstructorInitializationLists" Path="ConstructorInitializationLists/ConstructorInitializationLists.project" Active="No"/>
   <Project Name="DelegatingConstructors" Path="DelegatingConstructors/DelegatingConstructors.project" Active="No"/>
@@ -18,7 +18,7 @@
   <Project Name="ConstInClasses" Path="ConstInClasses/ConstInClasses.project" Active="No"/>
   <Project Name="StaticClassMembers" Path="StaticClassMembers/StaticClassMembers.project" Active="No"/>
   <Project Name="StructVsClass" Path="StructVsClass/StructVsClass.project" Active="No"/>
-  <Project Name="FriendsOfClass" Path="FriendsOfClass/FriendsOfClass.project" Active="No"/>
+  <Project Name="FriendsOfClass" Path="FriendsOfClass/FriendsOfClass.project" Active="Yes"/>
   <Project Name="Challenge" Path="Challenge/Challenge.project" Active="No"/>
   <Project Name="2darray" Path="deleteSection13/deleteSection13.project" Active="No"/>
   <BuildMatrix>
